@@ -52,6 +52,12 @@
                                 <rect key="frame" x="20" y="442" width="560" height="30"/>
                                 <state key="normal" title="Search"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-2E-WWX">
+                                <rect key="frame" x="20" y="480" width="560" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,11 +74,15 @@
                             <constraint firstItem="5VY-OC-5GO" firstAttribute="top" secondItem="m1y-Rn-24O" secondAttribute="bottom" constant="20" id="X1G-mP-fLY"/>
                             <constraint firstItem="AqY-Dm-LFg" firstAttribute="centerY" secondItem="yIz-hD-bKf" secondAttribute="centerY" id="aPL-lx-CGT"/>
                             <constraint firstItem="sv4-wk-8dj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="at6-7l-4d6"/>
+                            <constraint firstItem="DIS-2E-WWX" firstAttribute="top" secondItem="sv4-wk-8dj" secondAttribute="bottom" constant="8" id="dgZ-iV-CFO"/>
                             <constraint firstItem="m1y-Rn-24O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="knu-zO-Znf"/>
                             <constraint firstItem="AqY-Dm-LFg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mso-IS-bdC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DIS-2E-WWX" secondAttribute="bottom" constant="20" id="naY-f0-8PF"/>
+                            <constraint firstItem="DIS-2E-WWX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oPX-sj-P0e"/>
                             <constraint firstItem="sv4-wk-8dj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qe7-am-Wda"/>
                             <constraint firstItem="yIz-hD-bKf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tER-LS-2GK"/>
                             <constraint firstItem="7CN-O2-muY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcj-l4-hZx"/>
+                            <constraint firstItem="DIS-2E-WWX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="th0-ev-6Pe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sv4-wk-8dj" secondAttribute="bottom" constant="128" id="uwh-S8-jsK"/>
                             <constraint firstItem="5VY-OC-5GO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wtp-e1-cgY"/>
                         </constraints>
@@ -81,6 +91,7 @@
                         <outlet property="flickImageView" destination="5VY-OC-5GO" id="Hgm-t6-qzu"/>
                         <outlet property="latitudeTextField" destination="AqY-Dm-LFg" id="Ycw-qD-FUI"/>
                         <outlet property="longitudeTextField" destination="yIz-hD-bKf" id="mER-kO-Ras"/>
+                        <outlet property="photoTitleLabel" destination="DIS-2E-WWX" id="vFc-zu-fEy"/>
                         <outlet property="phraseTextField" destination="7LN-rO-EVP" id="7mb-AI-Eoe"/>
                     </connections>
                 </viewController>

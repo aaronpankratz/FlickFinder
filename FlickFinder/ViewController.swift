@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var phraseTextField: UITextField!
     @IBOutlet weak var latitudeTextField: UITextField!
     @IBOutlet weak var longitudeTextField: UITextField!
+    @IBOutlet weak var photoTitleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
