@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlickFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5VY-OC-5GO">
+                                <rect key="frame" x="20" y="80" width="560" height="242"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flick Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1y-Rn-24O">
+                                <rect key="frame" x="256" y="40" width="88" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phrase" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7LN-rO-EVP">
+                                <rect key="frame" x="20" y="342" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqY-Dm-LFg">
+                                <rect key="frame" x="20" y="392" width="270" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-hD-bKf">
+                                <rect key="frame" x="310" y="392" width="270" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search and find a Flick!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CN-O2-muY">
+                                <rect key="frame" x="211" y="196" width="178" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv4-wk-8dj">
+                                <rect key="frame" x="20" y="442" width="560" height="30"/>
+                                <state key="normal" title="Search"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIz-hD-bKf" firstAttribute="top" secondItem="7LN-rO-EVP" secondAttribute="bottom" constant="20" id="20F-ew-yTa"/>
+                            <constraint firstItem="m1y-Rn-24O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5gf-mC-rYm"/>
+                            <constraint firstItem="sv4-wk-8dj" firstAttribute="top" secondItem="yIz-hD-bKf" secondAttribute="bottom" constant="20" id="5vh-h6-cb3"/>
+                            <constraint firstItem="7LN-rO-EVP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="69s-pT-nK6"/>
+                            <constraint firstItem="yIz-hD-bKf" firstAttribute="leading" secondItem="AqY-Dm-LFg" secondAttribute="trailing" constant="20" id="9gC-Oh-eSO"/>
+                            <constraint firstItem="yIz-hD-bKf" firstAttribute="width" secondItem="AqY-Dm-LFg" secondAttribute="width" id="D1n-uE-h8N"/>
+                            <constraint firstItem="5VY-OC-5GO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H4I-dh-a15"/>
+                            <constraint firstItem="7LN-rO-EVP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IQb-2A-rGT"/>
+                            <constraint firstItem="7LN-rO-EVP" firstAttribute="top" secondItem="5VY-OC-5GO" secondAttribute="bottom" constant="20" id="NCf-4c-AAb"/>
+                            <constraint firstItem="7CN-O2-muY" firstAttribute="top" secondItem="m1y-Rn-24O" secondAttribute="bottom" constant="135.5" id="QOe-Tj-PJR"/>
+                            <constraint firstItem="5VY-OC-5GO" firstAttribute="top" secondItem="m1y-Rn-24O" secondAttribute="bottom" constant="20" id="X1G-mP-fLY"/>
+                            <constraint firstItem="AqY-Dm-LFg" firstAttribute="centerY" secondItem="yIz-hD-bKf" secondAttribute="centerY" id="aPL-lx-CGT"/>
+                            <constraint firstItem="sv4-wk-8dj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="at6-7l-4d6"/>
+                            <constraint firstItem="m1y-Rn-24O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="knu-zO-Znf"/>
+                            <constraint firstItem="AqY-Dm-LFg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mso-IS-bdC"/>
+                            <constraint firstItem="sv4-wk-8dj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qe7-am-Wda"/>
+                            <constraint firstItem="yIz-hD-bKf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tER-LS-2GK"/>
+                            <constraint firstItem="7CN-O2-muY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcj-l4-hZx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sv4-wk-8dj" secondAttribute="bottom" constant="128" id="uwh-S8-jsK"/>
+                            <constraint firstItem="5VY-OC-5GO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wtp-e1-cgY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flickImageView" destination="5VY-OC-5GO" id="Hgm-t6-qzu"/>
+                        <outlet property="latitudeTextField" destination="AqY-Dm-LFg" id="Ycw-qD-FUI"/>
+                        <outlet property="longitudeTextField" destination="yIz-hD-bKf" id="mER-kO-Ras"/>
+                        <outlet property="phraseTextField" destination="7LN-rO-EVP" id="7mb-AI-Eoe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="285" y="387"/>
         </scene>
     </scenes>
 </document>

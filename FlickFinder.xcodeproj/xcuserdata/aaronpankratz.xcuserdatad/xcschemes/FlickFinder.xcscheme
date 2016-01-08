@@ -13,6 +13,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D52A6BF71C3F60B3004CEB0F"
+            BuildableName = "FlickFinder.app"
+            BlueprintName = "FlickFinder"
+            ReferencedContainer = "container:FlickFinder.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +35,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D52A6BF71C3F60B3004CEB0F"
+            BuildableName = "FlickFinder.app"
+            BlueprintName = "FlickFinder"
+            ReferencedContainer = "container:FlickFinder.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +54,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D52A6BF71C3F60B3004CEB0F"
+            BuildableName = "FlickFinder.app"
+            BlueprintName = "FlickFinder"
+            ReferencedContainer = "container:FlickFinder.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
